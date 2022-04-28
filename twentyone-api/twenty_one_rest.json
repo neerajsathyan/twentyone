@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "9b30b1a3-4595-4332-b694-47c87a648be5",
+		"name": "Twenty One REST Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Game Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/status",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Game Status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5542"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 04:58:56 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"data\": [\n    {\n      \"active\": true, \n      \"cards\": [], \n      \"id\": \"97ae1c6a-d3d2-4075-9a5e-a0aeb16f2085\", \n      \"is_bank\": true, \n      \"name\": \"Bank\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": Infinity\n    }, \n    {\n      \"active\": false, \n      \"cards\": [], \n      \"id\": \"e9505d59-f3b1-4dbb-ace3-da8f6b6f3e0e\", \n      \"is_bank\": false, \n      \"name\": \"Player 1\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": 10\n    }, \n    {\n      \"active\": false, \n      \"cards\": [], \n      \"id\": \"b7284f59-5be7-4c70-a5d0-1bab4ee8863c\", \n      \"is_bank\": false, \n      \"name\": \"Player 2\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": 10\n    }, \n    {\n      \"active\": false, \n      \"cards\": [], \n      \"id\": \"8d1a719a-6c50-4660-a1fa-d79c2341799d\", \n      \"is_bank\": false, \n      \"name\": \"Player 3\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": 10\n    }\n  ], \n  \"deck\": [\n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"spades\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"clubs\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"hearts\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"spades\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"spades\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"spades\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"diamonds\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"spades\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"spades\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"diamonds\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"hearts\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"hearts\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"clubs\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"diamonds\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"clubs\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"diamonds\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"diamonds\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"diamonds\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"hearts\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"spades\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"hearts\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"spades\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"clubs\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"clubs\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"spades\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"hearts\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"clubs\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"diamonds\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"hearts\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"clubs\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"diamonds\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"spades\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"diamonds\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"clubs\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"clubs\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"diamonds\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"hearts\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"hearts\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"hearts\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"diamonds\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"diamonds\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"hearts\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"spades\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"clubs\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"clubs\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"clubs\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"spades\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"hearts\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"clubs\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"hearts\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"spades\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"diamonds\", \n      \"value\": 3\n    }\n  ], \n  \"status\": \"success\", \n  \"uuid\": \"56ec96d3-08c3-4c7c-91a5-da9a91895a05\"\n}\n"
+				}
+			]
+		},
+		{
+			"name": "Game Status Player ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/status?id=38fd3ef0-686c-4c09-a7b5-8e20471699a6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"status"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "38fd3ef0-686c-4c09-a7b5-8e20471699a6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Enter Game",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"08bd5a9d-f11b-421b-bf50-691c649a6b98\",\n    \"enter\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/enter_game",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"enter_game"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Enter Game",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"e9505d59-f3b1-4dbb-ace3-da8f6b6f3e0e\",\n    \"enter\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/enter_game",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"enter_game"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "66"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 05:16:28 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Player status updated!\",\n    \"status\": \"success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Start Round",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/start_round",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"start_round"
+					],
+					"query": [
+						{
+							"key": "round",
+							"value": "2",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Start Round",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/start_round?round=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"start_round"
+							],
+							"query": [
+								{
+									"key": "round",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5679"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 06:01:35 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"data\": [\n    {\n      \"active\": true, \n      \"cards\": [], \n      \"id\": \"90c0df1c-b459-4dea-857a-fb5a51886698\", \n      \"is_bank\": true, \n      \"name\": \"Bank\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": Infinity\n    }, \n    {\n      \"active\": true, \n      \"cards\": [\n        {\n          \"face_value\": \"ten\", \n          \"kind\": \"diamonds\", \n          \"value\": 10\n        }, \n        {\n          \"face_value\": \"queen\", \n          \"kind\": \"spades\", \n          \"value\": 2\n        }\n      ], \n      \"id\": \"70f0ecc4-091b-42d8-b885-fb640e3f0d1c\", \n      \"is_bank\": false, \n      \"name\": \"Player 1\", \n      \"on_hold\": 5, \n      \"status\": \"ready\", \n      \"value\": 12, \n      \"wallet\": 5\n    }, \n    {\n      \"active\": true, \n      \"cards\": [\n        {\n          \"face_value\": \"three\", \n          \"kind\": \"diamonds\", \n          \"value\": 3\n        }, \n        {\n          \"face_value\": \"king\", \n          \"kind\": \"clubs\", \n          \"value\": 3\n        }\n      ], \n      \"id\": \"4690dd66-bf64-48b1-a6f0-3c0016d9a828\", \n      \"is_bank\": false, \n      \"name\": \"Player 2\", \n      \"on_hold\": 6, \n      \"status\": \"ready\", \n      \"value\": 6, \n      \"wallet\": 4\n    }, \n    {\n      \"active\": false, \n      \"cards\": [], \n      \"id\": \"2616113a-8449-49b6-bedf-f4776e7c8504\", \n      \"is_bank\": false, \n      \"name\": \"Player 3\", \n      \"on_hold\": 0, \n      \"status\": \"ready\", \n      \"value\": 0, \n      \"wallet\": 10\n    }\n  ], \n  \"deck\": [\n    {\n      \"face_value\": \"four\", \n      \"kind\": \"clubs\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"hearts\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"hearts\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"hearts\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"spades\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"clubs\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"clubs\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"hearts\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"hearts\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"spades\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"hearts\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"spades\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"hearts\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"clubs\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"spades\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"hearts\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"spades\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"hearts\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"diamonds\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"diamonds\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"diamonds\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"clubs\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"spades\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"clubs\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"clubs\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"hearts\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"diamonds\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"hearts\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"clubs\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"hearts\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"six\", \n      \"kind\": \"diamonds\", \n      \"value\": 6\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"diamonds\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"king\", \n      \"kind\": \"spades\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"seven\", \n      \"kind\": \"diamonds\", \n      \"value\": 7\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"spades\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"diamonds\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"three\", \n      \"kind\": \"spades\", \n      \"value\": 3\n    }, \n    {\n      \"face_value\": \"nine\", \n      \"kind\": \"spades\", \n      \"value\": 9\n    }, \n    {\n      \"face_value\": \"four\", \n      \"kind\": \"diamonds\", \n      \"value\": 4\n    }, \n    {\n      \"face_value\": \"jack\", \n      \"kind\": \"clubs\", \n      \"value\": 1\n    }, \n    {\n      \"face_value\": \"two\", \n      \"kind\": \"clubs\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"hearts\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"ace\", \n      \"kind\": \"clubs\", \n      \"value\": 11\n    }, \n    {\n      \"face_value\": \"eight\", \n      \"kind\": \"diamonds\", \n      \"value\": 8\n    }, \n    {\n      \"face_value\": \"five\", \n      \"kind\": \"spades\", \n      \"value\": 5\n    }, \n    {\n      \"face_value\": \"ten\", \n      \"kind\": \"spades\", \n      \"value\": 10\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"diamonds\", \n      \"value\": 2\n    }, \n    {\n      \"face_value\": \"queen\", \n      \"kind\": \"clubs\", \n      \"value\": 2\n    }\n  ], \n  \"message\": \"Card distributed to all players.\", \n  \"status\": \"success\", \n  \"uuid\": \"48c57c6a-d693-4e25-9c52-390069a164cd\"\n}\n"
+				}
+			]
+		},
+		{
+			"name": "Place Bet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1e5e8f7f-af9e-4a09-9e07-0247ac45b6ac\",\n    \"value\": 6\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/place_bet",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"place_bet"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Place Bet",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"4690dd66-bf64-48b1-a6f0-3c0016d9a828\",\n    \"value\": 6\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/place_bet",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"place_bet"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "77"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 06:01:25 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"uuid\": \"499b5900-ebe8-44f6-9570-9686ac00dd9f\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Actions",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action\": \"stand\",\n    \"id\": \"5401c54a-9d1b-4075-b2f0-add93c0e9403\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/action",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"action"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Actions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"stand\",\n    \"id\": \"90c0df1c-b459-4dea-857a-fb5a51886698\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/action",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"action"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "835"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 06:03:26 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        null,\n        null,\n        {\n            \"active\": true,\n            \"cards\": [\n                {\n                    \"face_value\": \"three\",\n                    \"kind\": \"diamonds\",\n                    \"value\": 3\n                },\n                {\n                    \"face_value\": \"king\",\n                    \"kind\": \"clubs\",\n                    \"value\": 3\n                },\n                {\n                    \"face_value\": \"five\",\n                    \"kind\": \"spades\",\n                    \"value\": 5\n                },\n                {\n                    \"face_value\": \"eight\",\n                    \"kind\": \"diamonds\",\n                    \"value\": 8\n                }\n            ],\n            \"id\": \"4690dd66-bf64-48b1-a6f0-3c0016d9a828\",\n            \"is_bank\": false,\n            \"name\": \"Player 2\",\n            \"on_hold\": 0,\n            \"status\": \"win\",\n            \"value\": 19,\n            \"wallet\": 16\n        },\n        null\n    ],\n    \"message\": \"Winning Players\",\n    \"status\": \"success\",\n    \"uuid\": \"b33b5fcf-03ec-4501-8cb1-29b4ce86ea86\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Done Round",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/done_round",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"done_round"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Done Round",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/done_round",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"done_round"
+							]
+						}
+					},
+					"status": "BAD REQUEST",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "125"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 06:08:50 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Cannot continue to next round.\",\n    \"status\": \"failure\",\n    \"uuid\": \"795e3f50-c053-4f5f-8dd7-2c92cc08a9ad\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Reset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"deck_size\": 3,\n    \"player_size\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/game/reset",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"game",
+						"reset"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Reset",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"deck_size\": 3,\n    \"player_size\": 4\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/game/reset",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"game",
+								"reset"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "121"
+						},
+						{
+							"key": "Server",
+							"value": "Werkzeug/0.15.5 Python/3.8.10"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 28 Apr 2022 06:12:54 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Game reset with new specs.\",\n    \"status\": \"success\",\n    \"uuid\": \"23e7ec6e-8445-4574-a0b4-c9cf93ba9d6d\"\n}"
+				}
+			]
+		}
+	]
+}

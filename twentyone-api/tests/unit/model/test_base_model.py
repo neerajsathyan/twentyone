@@ -3,6 +3,7 @@
 import pytest
 from sqlalchemy.exc import NoInspectionAvailable
 
+
 def test_base_model(session):
     """
     GIVEN a User model
@@ -12,6 +13,6 @@ def test_base_model(session):
 
     from app.model.models import Model
     model = Model()
-    assert model.serialize() == {}   
+    assert model.serialize() == {}
     with pytest.raises(NoInspectionAvailable):
         model.remove_session()

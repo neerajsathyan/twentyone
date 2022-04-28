@@ -3,6 +3,7 @@
 from datetime import datetime
 from alchemy_mock.mocking import UnifiedAlchemyMagicMock
 
+
 def test_create_new_token(app):
     """
     GIVEN a Token model
@@ -41,4 +42,3 @@ def test_create_new_token(app):
     assert query.expires == expires
     assert query.serialize() == serialized_data
     assert str(query) == '<Token %r>' % (jti)
-  

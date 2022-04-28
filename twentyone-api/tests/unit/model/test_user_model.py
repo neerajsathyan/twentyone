@@ -1,8 +1,8 @@
 """Tests for the User model"""
 
-
 from alchemy_mock.mocking import UnifiedAlchemyMagicMock
 from ...util import get_unique_username
+
 
 def test_create_new_user(app):
     """

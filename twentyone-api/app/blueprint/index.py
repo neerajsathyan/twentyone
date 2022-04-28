@@ -19,4 +19,4 @@ def index() -> str:
         str: a text message
     """
 
-    return "The server is runing!"
+    return "The server is running!"
